@@ -1,0 +1,74 @@
+1)Create array with 3 Names
+var i;
+var emp = new Array();
+emp[0] = "Prajwal";
+emp[1] = "katta";
+emp[2] = "Amitabh";
+for (i=0;i<emp.length;i++) {
+document.write(emp[i] + "<br>");
+}
+
+
+
+2)display the length of this array
+const empname= ["Arun","varun","John"];
+
+
+
+console.log(empname.length);
+
+
+
+3)Reverse the array
+const empname = ["Arun","varun","John"];
+empname.reverse();
+
+
+
+4)sorting of array
+const empname = ["Arun","varun","John"];
+empname.sort();
+
+
+
+5)Create one more array with 5 Name
+var i;
+var emp1 = new Array();
+emp[0] = "Prajwal";
+emp[1] = "Katta";
+emp[2] = "Amitabh";
+for (i=0;i<emp1.length;i++) {
+document.write(emp[i] + "<br>");
+}
+
+
+
+6)Concatenate 2 arrays
+emp.concat(emp1);
+7)Slice the array
+emp.slice(0,2);
+
+
+
+8)Create a function to do arithmetic operations based on user input for values as well as operations.
+let x = prompt("Enter first no");
+let y = prompt("Enter second no");
+var sum =parseInt(x)+parseInt(y);
+var diff =parseInt(x)-parseInt(y);
+var mul =parseInt(x)*parseInt(y);
+var div =parseInt(x)/parseInt(y);
+alert("THE SUM OF TWO NUMBERS IS" + " " +sum+ "THE DIFFERENCE OF TWO NUMBERS IS" + " " +diff+ "THE MULTIPLICATION OF TWO NUMBERS IS" + " "+mul+"THE DIVISION OF TWO NUMBERS IS" +" "+div);
+alert("ThankYou!!!");
+
+
+
+9)first convert the input values to number using parseInt then pass them as arguments in the function call
+let x = parseInt(prompt("Enter Value 1"));
+let y = parseInt(prompt("Enter Value 2"));
+operations(x,y);
+function operations(x,y){
+console.log('x + y = ', x + y);
+console.log('x - y = ', x - y);  
+console.log('x * y = ', x * y);  
+console.log('x / y = ', x / y);  
+}
