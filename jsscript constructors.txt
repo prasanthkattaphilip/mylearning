@@ -1,9 +1,9 @@
 1)Create array with 3 Names
 var i;
 var emp = new Array();
-emp[0] = "Prajwal";
-emp[1] = "katta";
-emp[2] = "Amitabh";
+emp[0] = "Philip";
+emp[1] = "kprajwal";
+emp[2] = "Praveen";
 for (i=0;i<emp.length;i++) {
 document.write(emp[i] + "<br>");
 }
@@ -34,9 +34,9 @@ empname.sort();
 5)Create one more array with 5 Name
 var i;
 var emp1 = new Array();
-emp[0] = "Prajwal";
-emp[1] = "Katta";
-emp[2] = "Amitabh";
+emp[0] = "Philip";
+emp[1] = "Kprajwal";
+emp[2] = "Praveen";
 for (i=0;i<emp1.length;i++) {
 document.write(emp[i] + "<br>");
 }
