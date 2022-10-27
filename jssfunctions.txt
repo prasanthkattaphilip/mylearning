@@ -1,0 +1,217 @@
+Create a function to do arithmetic operations based on user input for values as well as operations.
+
+
+
+var num1 = parseFloat(prompt("enter first number"));  
+var num2 = parseFloat(prompt("enter second number")); 
+function arithematic(operator){
+if(operator == "sum") {  	 
+     var sum=num1+num2;   
+     console.log("sum of num1 and num2 is " +sum);
+}
+else if(operator == "sub") {
+      var sub=num1-num2;
+     console.log("sub of num1 and num2 is " +sub);
+}
+else if(operator == "mul"){
+ 	var mul=num1*num2;       
+    console.log("multiplication of num1 and num2 is " + mul);
+  }
+else if(operator == "div"){       
+	var div=num1/num2
+     console.log("div of num1 and num2 is " +div);
+      } 
+  }  
+var operation = prompt("enter the operation you want as sum or sub or mul or div");  
+arithematic(operation);
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+write a function to find square root of a number by taking no from user
+
+var num = parseint(prompt("enter a number");
+console.log("the square root of " + num + "is " +Math.sqrt(num));
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+parameterize a function to find the power of a number by taking user input for both base and power
+
+
+function power(){
+    var base = parseInt(prompt("enter base num"));
+    var power = parseInt(prompt("enter power num"));
+    console.log(base + " to the power " + power +" is "+Math.pow(base,power);
+}
+power();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Display how many days a person is old by taking his DOB
+
+var dob = new Date(prompt("enter dob"));
+var currentdate = new Date();
+var diff = currentdate.getDate()- dob.getDate();
+var diffmnth = currentdate.getMonth()- dob.getMonth();
+var diffyear = currentdate.getFullYear()- dob.getFullYear(); 
+
+console.log(diff + (365*diffyear)+(30*diffmnth));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Greet a person based on the time like, Good morning, good night and so on
+
+
+function getTime(){
+    var today =new Date();
+    var h =today.getHours();
+    return h;
+}
+var a = getTime();
+if(a < 12){
+    console.log("good morning");
+}
+else if(a>=12 & a<17){
+    console.log("good after noon");
+}
+else{
+    console.log("good evening");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+accept a decimal number from use and convert to hexadecimal number
+
+var num1 = parseFloat(prompt("Enter a base of a num: "));
+var num2 = num1.toString(16);
+console.log(num2);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+accept a string in a function and Split it into 2 words
+
+
+
+function Split(str)
+    {
+        var str = str.split(" ");
+        console.log(str);
+    }
+var str = prompt("enter your name");
+Split(str);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+write a function which displays length of the entered string
+
+function len(str)
+    {
+        var len = str.length;
+        return len;
+    }
+var str = prompt("enter your name");
+len(str);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Display below string in upper case:question
+
+var str = "question";
+console.log(str.toUpperCase());
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+current time
+
+function getTime(){
+    var today =new Date();
+    var h =today.getHours();
+    var m =today.getMinutes();
+    return h+":"+m;
+}
+var time = getTime();
+console.log(time);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Create an HTML document that displays  an alert  dialog box immediately after the page loads & displays(“ finished loading “). 
+And displays a different  alert  dialog  box when the user clicks on a form button. (‘Clicked on the button’)
+
+
+<html>
+<head>
+<title>Alert</title>
+</head>
+<body>
+<input type = "button" id ="btn" value="click me"/>
+<script>
+alert("finished loading")
+document.getElementById("btn").addEventListener("click",clicked);
+function clicked()
+{alert("clicked on the button");}
+
+</script>
+</body>
+</html>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+write a function in Javascript to Create  a form with  2 text box , input and output . 
+The text  entered in lowercase in the input text  box must be converted to uppercase and displayed in the output  textbox
+
+<html><head>
+<title>upper</title>
+</head>
+<body>
+Input  : <input id="demo" type="text"><br>
+Output:<input id="display"><br>
+   <input type="button" onclick="toupper()" value ="ok">
+   <script>
+    function toupper()
+    {
+     var text = document.getElementById("demo").value;
+     var result = text.toUpperCase();
+     document.getElementById("display").value = result;
+    }
+
+</script>
+</body>
+</html>
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+using JaVASCRIPT Create a form which checks whether a checkbox is checked/not and display  appropriate messages  through  alert boxes     
+
+<html>
+<body>
+<input type="checkbox" id="cbox">Check box</input><br>
+<input type="submit" onclick="validcheck()"></input>
+   <script>
+    function validcheck(){
+     var x = document.getElementById("cbox").checked;
+     if(x==false){
+      alert("Please tick the checkbox");
+    }
+    }
+   </script>
+</body>
+</html>
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+using JAva script Create a page that prompts the user for his or her name as the page loads and then welcomes the user by name in the body  of the page
+
+
+<html>
+<body>
+   <script>
+    var name = prompt("enter your name");
+    document.write("hello "+name+" how are you");
+   </script>
+</body>
+</html>
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
