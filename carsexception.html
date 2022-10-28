@@ -1,0 +1,66 @@
+<html>
+<body>
+
+
+
+
+
+<form action="" name="myForm"onsubmit="return(input())">
+  Color: <input type="text" id="color"><br>
+  Brand: <input type="text" id="brand"><br>
+  Model: <input type="text" id="model"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p id="carDetails"></p>
+
+
+
+
+
+<script>
+function input(){
+    function car(){
+    this.color=color;
+    this.brand=brand;
+    this.model=model;
+    this.applyBreak=applyBreak;
+    this.accelerate=accelerate;
+    function applyBreak(){
+        console.log("Breaks applied")
+        }
+    function accelerate(){
+        console.log("Accelerating")
+    }
+    }
+var color = document.getElementById("color").value;
+var brand = document.getElementById("brand").value;
+var model = document.getElementById("model").value;
+try {
+    if(color == "") throw "color is empty";
+    else if(brand == "") throw "brand is empty";
+    else if(model == "") throw "model is empty";
+}
+  catch(err) {
+    document.write("Error: " + err + ".");
+  }
+var newCar= new car(color, brand,model);
+
+
+
+
+
+document.write("Car color :"+newCar.color,", Car brand :"+newCar.brand,", Car model :"+newCar.model)
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

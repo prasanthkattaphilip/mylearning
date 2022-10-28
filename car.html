@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>CAR</title>
+</head>
+<body>
+<form>
+Color
+<input type="text" placeholder="enter car color" id = "cc">
+<br>
+brand
+<input type="text" placeholder="enter car brand" id = "cb">
+<br>
+Model
+<input type="text" placeholder="enter car Model" id = "cm">
+<input type ="button" id = "btn" value ="get details" onclick="getdetails()">
+<p id="1"></p>
+   <script>
+   function getdetails()
+    {
+     var a = document.getElementById("cc").value;
+     var b = document.getElementById("cb").value;
+     var c = document.getElementById("cm").value;
+     var result = a+"<br>" + b +"<br>" + c;
+     document.getElementById("1").innerHTML = result;
+    }
+</script>
+</form>
+
+
+
+
+
+</body>
